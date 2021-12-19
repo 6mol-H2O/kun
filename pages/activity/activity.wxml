@@ -1,0 +1,9 @@
+<!--pages/activity/activity.wxml-->
+<view class="container">
+  <image class="questionpic" src="{{list.questionpic}}"></image>
+  <image class="background" src='{{list.backpic}}'></image>
+  <text>{{list.question}}</text>
+  <button bindtap="click" id="1">{{list.answerone}}</button>
+  <button bindtap="click" id="2">{{list.answertwo}}</button>
+  <button bindtap="click" id="3">{{list.answerthree}}</button>
+</view>

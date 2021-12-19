@@ -1,0 +1,41 @@
+/* pages/play_ball/play_ball.wxss */
+.ball {
+  position:absolute;
+  top : 70%;
+  left : 30%;
+	width: 60rpx;
+	height: 60rpx;
+  border-radius: 60rpx;
+	background-color: #ad5806;
+   }
+.circle {
+  position: absolute;
+  left : 65%;
+  top : 32%;
+	width: 100rpx;
+	height: 80rpx;
+	border-radius: 100rpx;
+  border: 2px solid;
+}
+.to_top {
+  position: absolute;
+  top : 105%;
+  left : 39%;
+  margin-bottom: 5%;
+  border-top: 28rpx solid #f0f;
+  border-left: 28rpx solid transparent;
+  border-right: 28rpx solid transparent;
+}
+.bar{
+  width: 48rpx;
+  height: 50%;
+  position: fixed;
+  top : 55%;
+  left : 40%;
+  background-color: aqua;
+}
+page{
+	background-image:url("http://m.qpic.cn/psc?/V54DWESa0sRAoU0aTodf0ZH2Ht0OfYHO/45NBuzDIW489QBoVep5mcT7RW6m1.a6M7hQskW3rDJDDAj2Ir4CcGgEujiz7SpZxIRwTV7LwRVTK0Tr563g6qkMn7t7wl7PtvVCI8uHNRQ0!/b&bo=OARABgAAAAABF0o!&rf=viewer_4");
+	background-size:100% 155%;
+  background-position: 100% ;
+}

@@ -1,0 +1,15 @@
+/* pages/24points/points.wxss */
+.b1{
+  display: flex;
+}
+.b1 .sho{
+  border-radius: 50rpx;
+  width: 20rpx;
+  height: 80rpx;
+  background-color: #cf8787;
+}
+.b1 .op{
+  width: 20rpx;
+  height: 80rpx;
+  background-color: rgba(111, 157, 255, 0.925);
+}

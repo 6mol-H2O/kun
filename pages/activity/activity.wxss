@@ -1,0 +1,15 @@
+/* pages/activity/activity.wxss */
+.container{
+  width: 100%;
+  height: 100%;
+  padding: 0%;
+  /* margin: 0; */
+  /* position: relative; */
+}
+.background{
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+}

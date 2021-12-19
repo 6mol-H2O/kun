@@ -1,0 +1,10 @@
+<view  bindtap="click" class="container">
+  <image class="dialog" wx:if="{{list.dialog}}" src='{{dialog}}'></image>
+  <view>
+    <image class='a' bindtap="click2" wx:if="{{flag}}" src="{{a}}"></image>
+  </view>
+  <image  class="background" src='{{list.picurl}}'></image>
+  <view class='content'>
+    <text wx:if="{{list.dialog}}">{{list.text}}</text>
+  </view>
+</view>

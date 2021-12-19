@@ -1,0 +1,26 @@
+<!--index.wxml-->
+<view class="container">
+  <image class="background" src='http://m.qpic.cn/psc?/V54DWESa0sRAoU0aTodf0ZH2Ht0OfYHO/45NBuzDIW489QBoVep5mcTUYqLYxoJFFcx9DevO.mGpyqWdVLTaGvDs377Xpz3puFB.rHPMVfrg7ty4QQg9UivBcJoR4O9OIgjDpBQwAzPc!/b&bo=OATABgAAAAADZ7g!&rf=viewer_4'></image>
+  <view class="userinfo">
+    <block wx:if="{{canIUseOpenData}}">
+      <view class="userinfo-avatar" bindtap="bindViewTap">
+        <open-data type="userAvatarUrl"></open-data>
+      </view>
+      <open-data type="userNickName"></open-data>
+    </block>
+    <block wx:elif="{{!hasUserInfo}}">
+      <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 获取头像昵称 </button>
+      <button wx:elif="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+      <view wx:else> 请使用1.4.4及以上版本基础库 </view>
+    </block>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <button bindtap="newgame">新游戏</button>
+    <button bindtap="continue">继续游戏</button>
+    <button bindtap="achievement">游戏成就</button>
+  </view>
+</view>

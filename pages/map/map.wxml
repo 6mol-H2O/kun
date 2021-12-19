@@ -1,0 +1,6 @@
+<view>
+  <image class="a" src="{{a}}"></image>
+  <image bindtap="click1" class="b" src="{{b}}"></image>
+  <image bindtap="click2" class="c" src="{{b}}"></image>
+  <image bindtap="click3" class="d" src="{{b}}"></image>
+</view>

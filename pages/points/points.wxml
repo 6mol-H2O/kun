@@ -1,0 +1,25 @@
+<!--pages/24points/points.wxml-->
+<view>
+  <view class="b1">
+    <button class="sho">{{s1}}</button>
+    <button class="op">{{s2}}</button>
+    <button class="sho">{{s3}}</button>
+    <button class="op">{{s4}}</button>
+    <button class="sho">{{s5}}</button>
+    <button class="op">{{s6}}</button>
+    <button class="sho">{{s7}}</button>
+  </view>
+  <view wx:if="{{isshow}}"  class="b1">
+    <button bindtap="but" class="function" data-type="{{num1}}" style="width: 75px;">{{num1}}</button>
+    <button bindtap="but" class="function" data-type="{{num2}}" style="width: 75px;">{{num2}}</button>
+    <button bindtap="but" class="function" data-type="{{num3}}" style="width: 75px;">{{num3}}</button>
+    <button bindtap="but" class="function" data-type="{{num4}}" style="width: 75px;">{{num4}}</button>
+  </view>
+  <view wx:if="{{!isshow}}"  class="b1">
+    <button bindtap="but" class="function" data-type="+" style="width: 75px;">+</button>
+    <button bindtap="but" class="function" data-type="-" style="width: 75px;">-</button>
+    <button bindtap="but" class="function" data-type="*" style="width: 75px;">*</button>
+    <button bindtap="but" class="function" data-type="÷" style="width: 75px;">÷</button>
+  </view>
+  <button bindtap="but" class="function" data-type="clear" style="width: 75px;">C</button>
+</view>

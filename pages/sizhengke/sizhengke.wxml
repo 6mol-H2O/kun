@@ -1,0 +1,9 @@
+<!--pages/sizhengke/sizhengke.wxml-->
+<view class="container">
+  <image class="questionpic" wx:if="{{list.picurl}}" src="{{list.picurl}}"></image>
+  <image class="background" src='{{list.backpicurl}}'></image>
+  <text>{{list.question}}</text>
+  <button bindtap="click" id="1">{{list.answerone}}</button>
+  <button bindtap="click" id="2">{{list.answertwo}}</button>
+  <button bindtap="click" id="3">{{list.answerthree}}</button>
+</view>

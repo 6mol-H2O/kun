@@ -1,0 +1,30 @@
+<!--pages/snake/snake.wxml-->
+<view id="snake" bindtouchstart="touchStart" bindtouchmove="touchMove" bindtouchend="touchEnd">
+  <view class="score">
+    <view class="score-box score-detail">
+      <text class="scoreDes">蓝色</text>
+      <text class="scoreNum">{{list[i]}}</text>
+    </view>
+
+    <view class="score-box score-detail">
+      <text class="scoreDes">绿色</text>
+      <text class="scoreNum">虚假的字母</text>
+    </view>
+
+    <view class="score-box score-detail">
+      <text class="scoreDes">最终目标</text>
+      <text class="scoreNum">HELLO</text>
+    </view>
+  </view>
+
+  <view class="ground">
+    <view wx:for="{{ground}}" wx:key="food" wx:for-item="cols" class="rows">
+      <view wx:for="{{cols}}" wx:key="food"  class="box box_{{item}}"></view>
+    </view>
+  </view>
+
+  <modal class="modal" hidden="{{modalHidden}}" no-cancel bindconfirm="modalChange">
+    <view>游戏结束，重新开始吗？</view>
+  </modal>
+</view>
+

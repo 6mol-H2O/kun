@@ -1,0 +1,10 @@
+<!--pages/home/home.wxml-->
+<view class="container" bindtap="click">
+  <image class="dialog" wx:if="{{list.dialog}}" src='{{dialog}}'></image>
+  <image class="background" src='{{list.picurl}}'></image>
+  <image class="protagonist" wx:if="{{list.protagonist}}" src="{{protagonist}}"></image>
+  <image class="chum" wx:if="{{list.chum}}" src='{{chum}}'></image>
+  <view class='content'>
+    <text wx:if="{{list.dialog}}" style="font-weight: bold;">{{list.text}}</text>
+  </view>
+</view>
